@@ -8,7 +8,7 @@
     "lint": "nx run-many -t lint",
     "typecheck": "nx run-many -t typecheck",
     "test:backend": "nx run-many -t test --projects=api,ingest",
-    "test:frontend": "nx run-many -t test-ci --projects=web,contracts,data-access,rag-domain,rag-providers",
+    "test:frontend": "nx run-many -t test --projects=web,contracts,data-access,rag-domain,rag-providers -- --run",
     "build": "nx run-many -t build",
     "verify": "npm run format:check && npm run lint && npm run typecheck && npm run test:backend && npm run test:frontend && npm run build"
   },
