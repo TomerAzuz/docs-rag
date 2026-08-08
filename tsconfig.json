@@ -1,0 +1,33 @@
+{
+  "extends": "./tsconfig.base.json",
+  "files": [],
+  "references": [
+    {
+      "path": "./apps/api"
+    },
+    {
+      "path": "./apps/api-e2e"
+    },
+    {
+      "path": "./apps/ingest"
+    },
+    {
+      "path": "./apps/web"
+    },
+    {
+      "path": "./apps/web-e2e"
+    },
+    {
+      "path": "./libs/contracts"
+    },
+    {
+      "path": "./libs/data-access"
+    },
+    {
+      "path": "./libs/rag/domain"
+    },
+    {
+      "path": "./libs/rag/providers"
+    }
+  ]
+}

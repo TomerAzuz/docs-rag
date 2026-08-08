@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": true,
+    "moduleResolution": "bundler",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "strict": false,
+    "paths": {
+      "@docs-rag/contracts": ["./libs/contracts/src/index.ts"],
+      "@docs-rag/rag-domain": ["./libs/rag/domain/src/index.ts"],
+      "@docs-rag/rag-providers": ["./libs/rag/providers/src/index.ts"],
+      "@docs-rag/data-access": ["./libs/data-access/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
