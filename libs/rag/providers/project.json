@@ -1,0 +1,9 @@
+{
+  "name": "rag-providers",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/rag/providers/src",
+  "projectType": "library",
+  "tags": ["type:lib", "scope:rag", "layer:providers"],
+  "// targets": "to see all targets run: nx show project rag-providers --web",
+  "targets": {}
+}

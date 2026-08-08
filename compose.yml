@@ -1,0 +1,25 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-docs_rag}
+      POSTGRES_USER: ${POSTGRES_USER:-docs_rag}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-docs_rag}
+    ports:
+      - '${POSTGRES_PORT:-5432}:5432'
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test:
+        [
+          'CMD-SHELL',
+          'pg_isready -U ${POSTGRES_USER:-docs_rag} -d ${POSTGRES_DB:-docs_rag}',
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 5s
+
+volumes:
+  postgres-data:

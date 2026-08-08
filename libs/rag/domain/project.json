@@ -1,0 +1,9 @@
+{
+  "name": "rag-domain",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/rag/domain/src",
+  "projectType": "library",
+  "tags": ["type:lib", "scope:rag", "layer:domain"],
+  "// targets": "to see all targets run: nx show project rag-domain --web",
+  "targets": {}
+}
