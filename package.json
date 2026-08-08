@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "format": "nx format:write",
-    "format:check": "nx format:check",
+    "format:check": "nx format:check --all",
     "lint": "nx run-many -t lint",
     "typecheck": "nx run-many -t typecheck",
     "test:backend": "nx run-many -t test --projects=api,ingest",
