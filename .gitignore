@@ -53,3 +53,24 @@ vitest.config.*.timestamp*
 .env
 .env.*
 !.env.example
+
+# Ignore local skills installation cache (if applicable)
+.skills/
+
+# Ignore local AI agent state and chat histories
+.claude/
+.cursor/
+.cursorworkspace/
+.agents/
+
+skills-lock.json
+
+# Teaching / learning workspace (Neuron deploy course — not part of the docs-rag product)
+learning-records/
+lessons/
+assets/
+reference/
+MISSION.md
+NOTES.md
+RESOURCES.md
+Neuron Monorepo — Onboarding Guide.md
